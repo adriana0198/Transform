@@ -1,0 +1,301 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.menu{
+  background-color:#ff7979;
+}
+.menu>ul{
+  text-align: center;
+}
+.menu>ul:nth-child(2){
+  text-align: center;
+  padding: 15px 15px;
+}
+.menu>ul>li{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 38px;
+  width: 100px;
+  transition: .3s;
+}
+ul{
+  list-style: none;
+}
+a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:0.1s;
+  color: white;
+}
+.menu>ul>li>div{
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: .5s;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border: white solid 2px;
+}
+.menu>ul>li:hover>div, .menu>ul>li.Active>div{
+    width: 80%;
+    height: 23px;
+    opacity: 1;
+}
+li:hover, li.Active {
+  background-color:#eb4d4b;
+}
+h1{
+  background-color: #f6e58d;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
+  font-size: 40px;
+}
+
+.uno{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgb(243, 202, 198);
+  width: 1500px;
+  height: 361px;
+}
+.uno article{
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  background-color: rgba(157, 241, 241, 0.534);
+  transform: scale(0);
+  transition: .6s;
+}
+.uno:hover article{
+  transform: scale(1);
+}
+
+.uno nav:first-child img{
+  position: absolute;
+  top:  0px;
+  left: 0px;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+}
+.uno nav:nth-child(2) img{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+}
+.uno nav:first-child{
+  position: absolute;
+  top:  30px;
+  left: 260px;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+  background-color: paleturquoise;
+}
+.uno nav:nth-child(2){
+  position: absolute;
+  top:30px;
+  right: 350px;
+  margin: auto;
+  width: 400px;
+  height: 250px;
+  background-color: paleturquoise;
+}
+
+.dos{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgb(243, 202, 198);
+  width: 1500px;
+  height: 361px;
+}
+.dos nav:first-child{
+  position: absolute;
+  top:30px;
+  left: 250px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+.dos nav:nth-child(2){
+  position: absolute;
+  top:30px;
+  right: 260px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+
+.tres{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgb(243, 202, 198);
+  width: 1500px;
+  height: 361px;
+}
+.tres nav:first-child{
+  position: absolute;
+  top:30px;
+  left: 250px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+.tres nav:nth-child(2){
+  position: absolute;
+  top:30px;
+  right: 260px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+
+.cuatro{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgb(243, 202, 198);
+  width: 1500px;
+  height: 361px;
+}
+.cuatro nav:first-child{
+  position: absolute;
+  top:30px;
+  left: 250px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+.cuatro nav:nth-child(2){
+  position: absolute;
+  top:30px;
+  right: 260px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+
+.cinco{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgb(243, 202, 198);
+  width: 1500px;
+  height: 361px;
+}
+.cinco nav:first-child{
+  position: absolute;
+  top:30px;
+  left: 250px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+.cinco nav:nth-child(2){
+  position: absolute;
+  top:30px;
+  right: 260px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+
+
+.seis{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgb(243, 202, 198);
+  width: 1500px;
+  height: 361px;
+}
+.seis nav:first-child{
+  position: absolute;
+  top:30px;
+  left: 250px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+.seis nav:nth-child(2){
+  position: absolute;
+  top:30px;
+  right: 260px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+
+.siete{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgb(243, 202, 198);
+  width: 1500px;
+  height: 361px;
+}
+.siete nav:first-child{
+  position: absolute;
+  top:30px;
+  left: 250px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
+.siete nav:nth-child(2){
+  position: absolute;
+  top:30px;
+  right: 260px;
+  margin: auto;
+  width: 500px;
+  height: 350px;
+}
