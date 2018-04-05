@@ -61,12 +61,30 @@ li:hover, li.Active {
 h1{
   background-color: #f6e58d;
   text-align: center;
-  height: 100px;
+  height: 50px;
   padding: 30px;
   font-size: 40px;
 }
+fondo{
+  position: absolute;
+  top:60px;
+  bottom: 0;
+  left:0px;
+  margin: auto;
+  float: left;
+  right: 0px;
+  background-color:   rgb(243, 202, 198);
+  width: 1366px;
+  height: 421px;
+}
+/* tamaño imagenes */
+div, div img{
+  width: 400px;
+  height: 250px;
+}
 
-.uno{
+/* ---------- */
+.uno1{
   position: absolute;
   top:0;
   bottom: 0;
@@ -74,58 +92,398 @@ h1{
   margin: auto;
   float: left;
   right: 500px;
-  background-color: rgb(243, 202, 198);
-  width: 1500px;
-  height: 361px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
 }
-.uno article{
+.uno2{
   position: absolute;
+  top:0;
+  bottom: 0;
+  left:600px;
+  margin: auto;
+  float: left;
+  right: 0px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.uno1 img, .uno2 img{
+  position: absolute;
+  right: 0;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.uno1:hover img, .uno2:hover img{
+  transform: scale(1.3);
+  overflow: hidden;
+}
+.uno1 article, .uno2 article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(114, 199, 224, 0.4);
   width: 400px;
   height: 250px;
-  background-color: rgba(157, 241, 241, 0.534);
   transform: scale(0);
-  transition: .6s;
+  transition-duration: .5s;
+  overflow: hidden;
 }
-.uno:hover article{
+.uno1:hover article, .uno2:hover article{
+  transform: scale(1);
+  transition-duration: .5s;
+}
+.uno1 article h4, .uno2 article h4{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  margin-top: 20px;
+  font-size: 20px;
+  transform: translateY(-210px);
+  transition-duration: 0.6s;
+  transition-delay: .6s;
+  overflow: hidden;
+}
+.uno1:hover article h4, .uno2:hover article h4{
+  transform: translateY(0);
+}
+.uno1 article p, .uno2 article p{
+  text-align: justify;
+  padding: 15px 40px;
+  font-size: 12px;
+  margin-top: 10px;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  transform: translateY(200px);
+  transition-duration: .6s;
+  transition-delay: .8s;
+}
+.uno1:hover article p, .uno2:hover article p{
+  transform: translateY(0);
+}
+.uno1 article a, .uno2 article a{
+  margin: 25px 150px;
+  margin-top: 170px;
+  background-color: rgb(71, 132, 189);
+  padding: 0;
+  transform: scale(0);
+  transition-duration: 1s;
+  transition-delay: 1s;
+  font-family: 'Indie Flower', cursive;
+}
+.uno1:hover article a, .uno2:hover article a{
   transform: scale(1);
 }
 
-.uno nav:first-child img{
+.dos1{
   position: absolute;
-  top:  0px;
-  left: 0px;
+  top:0;
+  bottom: 0;
+  left:0;
   margin: auto;
-  width: 400px;
-  height: 250px;
+  float: left;
+  right: 500px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
 }
-.uno nav:nth-child(2) img{
+.dos2{
   position: absolute;
-  top: 0px;
+  top:0;
+  bottom: 0;
+  left:600px;
+  margin: auto;
+  float: left;
   right: 0px;
-  margin: auto;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.dos1 article, .dos2 article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 400px;
   height: 250px;
+  background-color: rgba(64, 187, 240,0.4);
+  transform: rotate(90deg) translate(350px ,-350px);
+  transition-duration: .5s;
+  overflow: hidden;
 }
-.uno nav:first-child{
+.dos1:hover article, .dos2:hover article{
+  transform: rotate(0deg) translate(0px);
+}
+.dos1 article h4, .dos2 article h4{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  font-size: 20px;
+  padding:20px 20px;
+  transform: translate(280px,-60px) ;
+  transition-duration: .6s;
+  transition-delay: .6s ;
+}
+.dos1:hover article h4, .dos2:hover article h4{
+  transform: translate(0px);
+}
+.dos1 article p, .dos2 article p{
+  text-align: justify;
+  padding: 10px 15px;
+  color: aliceblue;
+  font-size: 15px;
+  transform: translateX(-700px) translateY(150px);
+  transition-duration: .6s;
+  transition-delay: .6s;
+}
+.dos1:hover article p, .dos2:hover article p{
+  transform: translateX(0px) translateX(0px);
+}
+.dos1 article a, .dos2 article a{
+  margin: 25px 150px;
+  margin-top: 170px;
+  padding: 0;
+  background-color: rgb(89, 166, 189);
+  transform: translateY(160px);
+  transition-duration: .6s;
+  transition-delay: .6s;
+  font-family: 'Indie Flower', cursive;
+}
+.dos1:hover article a, .dos2:hover article a{
+  transform: translateY(0px);
+}
+
+.tres1{
   position: absolute;
-  top:  30px;
-  left: 260px;
+  top:0;
+  bottom: 0;
+  left:0;
   margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.tres2{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:600px;
+  margin: auto;
+  float: left;
+  right: 0px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.tres1 article, .tres2 article{
+  position: absolute;
+  top:0px;
   width: 400px;
   height: 250px;
-  background-color: paleturquoise;
+  transform:  rotate(90deg)  translate(-326px,-325px);
+  background: rgba(147, 255, 250, 0.72);
+  transition-property: transform ;
+  transition-duration: .5s;
+  overflow: hidden;
 }
-.uno nav:nth-child(2){
+.tres1:hover article, .tres2:hover article{
+  transform: rotate(0)  translate(0);
+}
+.tres1 img, .tres2 img{
   position: absolute;
-  top:30px;
-  right: 350px;
+  transform: scale(1) rotate(0) ;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.tres1:hover img, .tres2:hover img{
+  transform: scale(1.3) rotate(5deg) ;
+}
+.tres1 article h4, .tres2 article h4{
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  transform:  rotate(-90deg)  translate(-326px,-325px);
+  transition-duration: .5s;
+  transition-delay: .5s ;
+}
+.tres1:hover article h4, .tres2:hover article h4{
+  transform: rotate(0) translate(0);
+}
+.tres1 article p, .tres2 article p{
+  text-align: justify;
+  padding: 10px 15px;
+  color: aliceblue;
+  font-size: 17px;
+  transform: rotate(90deg)  translate(326px,325px);
+  transition-duration: .4s;
+  transition-delay: .4s;
+}
+.tres1:hover article p, .tres2:hover article p{
+  transform: rotate(0) translate(0);
+}
+.tres1 article a, .tres2 article a{
+  margin: 25px 150px;
+  margin-top: 170px;
+  padding: 0;
+  background-color: rgb(89, 166, 189);
+  transform: rotate(90deg)  translate(326px,325px);
+  transition-duration: .4s;
+  transition-delay: .4s;
+  font-family: 'Indie Flower', cursive;
+}
+.tres1:hover article a, .tres2:hover article a{
+  transform: rotate(0) translate(0);
+}
+
+
+.cuatro1{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
   margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.cuatro2{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:600px;
+  margin: auto;
+  float: left;
+  right: 0px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.cuatro1 article, .cuatro2 article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(43, 205, 226, 0.4);
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg);
+  transition-duration: .6s;
+  overflow: hidden;
+}
+.cuatro1:hover article, .cuatro2:hover article{
+  transform:rotate(720deg);
+}
+.cuatro1 article h4, .cuatro2 article h4{
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  font-size: 20px;
+  transform: translateX(270px);
+  transition-duration: .5s;
+  transition-delay: .5s; 
+}
+.cuatro1:hover article h4, .cuatro2:hover article h4{
+  transform: translate(0);
+}
+.cuatro1 article p, .cuatro2 article p{
+  text-align: justify;
+  padding: 30px 15px;
+  color: aliceblue;
+  font-size: 15px;
+  transform: translateX(-400px);
+  transition-duration: .5s;
+  transition-delay: .5s;
+}
+.cuatro1:hover article p, .cuatro2:hover article p{
+  transform: translate(0);
+}
+.cuatro1 article a, .cuatro2 article a{
+  margin: 25px 150px;
+  margin-top: 170px;
+  padding: 0;
+  background-color: rgb(89, 166, 189);
+  transform: translateY(300PX);
+  transition-duration: .5s;
+  transition-delay: .5s;
+  font-family: 'Indie Flower', cursive;
+}
+.cuatro1:hover article a, .cuatro2:hover article a{
+  transform: translate(0);
+}
+
+.cinco1{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.cinco2{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:600px;
+  margin: auto;
+  float: left;
+  right: 0px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.cinco1 article, .cinco2 article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 400px;
   height: 250px;
-  background-color: paleturquoise;
+  background-color: rgba(64, 187, 240,0.4);
+  transform: translate(-350px ,350px);
+  transition-duration: .5s;
+  overflow: hidden;
+}
+.cinco1:hover article, .cinco2:hover article{
+  transform:  translate(0px);
+}
+.cinco1 article h4, .cinco2 article h4{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  font-size: 20px;
+  padding:20px 20px;
+  transform:  rotate(360deg);
+  transition-duration: .3s;
+  transition-delay: 1s ;
+}
+.cinco1:hover article h4, .cinco2:hover article h4{
+  transform:  rotate(0deg);
+}
+.cinco1 article p, .cinco2 article p {
+  text-align: justify;
+  padding: 10px 15px;
+  color: aliceblue;
+  font-size: 15px;
+  transform: translate(-700px,390px);
+  transition-duration: .6s;
+  transition-delay: 1s;
+}
+.cinco1:hover article p, .cinco2:hover article p{
+  transform: translate(0px);
+}
+.cinco1 article a, .cinco2 article a{
+  margin: 25px 150px;
+  margin-top: 170px;
+  padding: 0;
+  background-color: rgb(89, 166, 189);
+  transform:  rotate(360deg);
+  transition-duration: .6s;
+  transition-delay: 1.5s ;
+  font-family: 'Indie Flower', cursive;
+}
+.cinco1:hover article a, .cinco2:hover article a{
+  transform:  rotate(0deg);
 }
 
-.dos{
+.seis1{
   position: absolute;
   top:0;
   bottom: 0;
@@ -133,142 +491,86 @@ h1{
   margin: auto;
   float: left;
   right: 500px;
-  background-color: rgb(243, 202, 198);
-  width: 1500px;
-  height: 361px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
 }
-.dos nav:first-child{
-  position: absolute;
-  top:30px;
-  left: 250px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
-}
-.dos nav:nth-child(2){
-  position: absolute;
-  top:30px;
-  right: 260px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
-}
-
-.tres{
+.seis2{
   position: absolute;
   top:0;
   bottom: 0;
-  left:0;
+  left:600px;
   margin: auto;
   float: left;
-  right: 500px;
-  background-color: rgb(243, 202, 198);
-  width: 1500px;
-  height: 361px;
+  right: 0px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
 }
-.tres nav:first-child{
+.seis1 img, .seis2 img{
   position: absolute;
-  top:30px;
-  left: 250px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
+  right: 0;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  overflow: hidden;
 }
-.tres nav:nth-child(2){
-  position: absolute;
-  top:30px;
-  right: 260px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
+.seis1:hover img, .seis2:hover img{
+  transform: scale(1.3);
+  overflow: hidden;
 }
-
-.cuatro{
+.seis1 article, .seis2 article{
   position: absolute;
-  top:0;
-  bottom: 0;
-  left:0;
-  margin: auto;
-  float: left;
-  right: 500px;
-  background-color: rgb(243, 202, 198);
-  width: 1500px;
-  height: 361px;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(196, 93, 178,0.4);
+  width: 400px;
+  height: 250px;
+  transform: scale(0);
+  transition-duration: .6s;
+  overflow: hidden;
 }
-.cuatro nav:first-child{
-  position: absolute;
-  top:30px;
-  left: 250px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
+.seis1:hover article, .seis2:hover article{
+  transform: scale(1);
+  transition-duration: .6s;
+  background-color: #f6e58d;
 }
-.cuatro nav:nth-child(2){
-  position: absolute;
-  top:30px;
-  right: 260px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
+.seis1 article h4, .seis2 article h4 {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 20px;
+  transform: scale(0);
+  transition-duration: .5s;
+  transition-delay: 1s;
+  overflow: hidden;
 }
-
-.cinco{
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left:0;
-  margin: auto;
-  float: left;
-  right: 500px;
-  background-color: rgb(243, 202, 198);
-  width: 1500px;
-  height: 361px;
+.seis1:hover article h4, .seis2:hover article h4{
+  transform: scale(1);
 }
-.cinco nav:first-child{
-  position: absolute;
-  top:30px;
-  left: 250px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
+.seis1 article p, .seis2 article p{
+  text-align: justify;
+  padding: 15px 40px;
+  font-size: 13px;
+  font-family: 'Indie Flower', cursive;
+  color: aliceblue;
+  transform: scale(0);
+  transition-duration: .5s;
+  transition-delay: 1s;
 }
-.cinco nav:nth-child(2){
-  position: absolute;
-  top:30px;
-  right: 260px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
+.seis1:hover article p, .seis2:hover article p{
+  transform: scale(1);
 }
-
-
-.seis{
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left:0;
-  margin: auto;
-  float: left;
-  right: 500px;
-  background-color: rgb(243, 202, 198);
-  width: 1500px;
-  height: 361px;
+.seis1 article a, .seis2 article a{
+  margin: 25px 150px;
+  margin-top: 170px;
+  padding: 0;
+  background-color: rgb(89, 166, 189);
+  transform:  rotate(360deg);
+  transition-duration: .5s;
+  transition-delay: 1s ;
+  font-family: 'Indie Flower', cursive;
 }
-.seis nav:first-child{
-  position: absolute;
-  top:30px;
-  left: 250px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
-}
-.seis nav:nth-child(2){
-  position: absolute;
-  top:30px;
-  right: 260px;
-  margin: auto;
-  width: 500px;
-  height: 350px;
+.seis1:hover article a, .seis2:hover article a{
+  transform:  rotate(0deg);
 }
 
 .siete{
